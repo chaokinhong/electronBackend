@@ -14,9 +14,9 @@ app.use(cors());
 
 app.use('/user', userRoutes)
 app.use('/pre',preRoutes)
-app.get("/", (req, res) => {
-    res.send("Hello to MangoDB Backend!!!!!");
-});
+// app.get("/", (req, res) => {
+//     res.send("Hello to MangoDB Backend!!!!!");
+// });
 
 const CONNECTION_URL = process.env.CONNECTION_URL;
 const PORT = process.env.PORT || 5000
